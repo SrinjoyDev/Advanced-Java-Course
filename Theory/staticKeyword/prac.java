@@ -33,4 +33,8 @@ class Mobile {
     public void show() {
         System.out.println(brand + " " + name + " " + price);
     }
+
+    public static void show1() {
+        System.out.println("calling the static method" + brand);
+    }
 }
