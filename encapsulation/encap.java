@@ -3,7 +3,6 @@
 //That means , encapsulation is like a capsule ,
 //keeping it closed , isloated , so that no one can outside can use it.
 
-
 class Me {
   private String name = "Srinjoy";
   private int age = 21;
@@ -11,10 +10,12 @@ class Me {
   private String setName;
   private int setAge;
 
-  //above instance variables are privare so if someone directs wants to access this ,
-  //the wont be able to.
-  
-  //we can make methods , by which we can give access to private instance variable;
+  // above instance variables are privare so if someone directs wants to access
+  // this ,
+  // the wont be able to.
+
+  // we can make methods , by which we can give access to private instance
+  // variable;
   public String getName() {
     return name;
   }
@@ -26,27 +27,26 @@ class Me {
   public void setName(String nameToSet) {
     setName = nameToSet;
     System.out.println(setName);
-  } 
+  }
 
   public void setAge(int ageToSet) {
     setAge = ageToSet;
     System.out.println(setAge);
-  } 
+  }
 
 }
 
 public class encap {
-  public static void main(String a[]){
-
+  public static void main(String a[]) {
     Me obj1 = new Me();
-    //obj1.name = "Srinjoy"; //wont work as name is a private instance variable.
-    //System.out.println(name);
-    
-    //as we made methods for that class , we can get the name anda ge as >
+    // obj1.name = "Srinjoy"; //wont work as name is a private instance variable.
+    // System.out.println(name);
+
+    // as we made methods for that class , we can get the name anda ge as >
     System.out.println("name of the user : " + obj1.getName());
     System.out.println("age of the user : " + obj1.getAge());
 
-    //set the name
+    // set the name
     Me obj2 = new Me();
     obj2.setName("shakir");
     obj2.setAge(11);
