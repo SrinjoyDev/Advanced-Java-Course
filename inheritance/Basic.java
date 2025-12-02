@@ -21,6 +21,25 @@
 //
 //
 
+//in other languages , we can do multiple inheritance.
+//for example lets say  class a is parent , class b is parent and class c is the child
+//if the child dosent have the method it asks from parent.
+//if the same method is present in both the classes then it casuses ambiguity.
+//so that is java dont support , so java dosent support MULTI LEVEL INHERITANCE.
+//THEY SOLVED THE ISSUE BY REMOVING THE ISSUE.
+
+class A {
+
+}
+
+class B {
+
+}
+
+class C {
+
+}
+
 public class Basic {
 
   public static void main(String[] args) {
