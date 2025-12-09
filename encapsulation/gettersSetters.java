@@ -22,8 +22,8 @@ class Me {
   public void setName(String nameToSet) {
     this.setName = nameToSet; //this method is used , to refer an instance varialble
     System.out.println(setName);
-  } o_
-ov
+  }
+  
   public void setAge(int ageToSet) {
     this.setAge = ageToSet;
     System.out.println(setAge);
