@@ -31,7 +31,12 @@ public class Main {
         //for private variables : for private variables , we can use it in the same class.
         //for defaulty acess modifiers we can use it if the class is getting acessed from the same package.
         //for protected acess modifiers we can use it from anywheer but only after creating a subclass from that parent class.
+        //protected can be used in the same package non subclass too. (NOTE)
         //for public access modifeiers we can access it from anywhere.
 
+
+        //GOOD PRACTICEs >
+        //try to keep ur classes public,
+        //dont use degfauly access moduiefiers for vars , try to usse privatee more.
     }  
 }
