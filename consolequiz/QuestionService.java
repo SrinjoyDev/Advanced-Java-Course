@@ -36,19 +36,6 @@ public class QuestionService {
     Scanner sc = new Scanner(System.in);
     System.out.println("QUESTIONS PRESENT ARE : ");
 
-    // OLD FOR LOOP
-    // for(int i = 0 ; i < questions.length ; i ++){
-    // System.out.println(questions[i].getQuestion() + " ");
-    // }
-    // System.out.println();
-
-    // //using advanced loop>
-    // for (Question q: questions){
-    // System.out.println(q); //it calls internally toString() , what the toString
-    // does is , it makes the hash values to toString
-    // }
-    //
-
     System.out.println("welcome to the quiz game");
     System.out.println();
     System.out.println("what is ur name ??");
@@ -65,14 +52,7 @@ public class QuestionService {
       System.out.println("question number : " + q.getId());
       System.out.println(q.getQuestion());
 
-      // print the options
-      // so options are array also so we have to have an inner loop to print the
-      // options
-      /// one of the methods
-      // System.out.println("Options : " + Arrays.toString(q.getOptions()));
-      //
-      // or if u want to have more control: like pretty print or some stuff u want to
-      // do , that is print in ur way
+      //print options
       String[] options = q.getOptions();
 
       System.out.println("Options : ");
