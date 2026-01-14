@@ -27,6 +27,7 @@ class Wagon extends Car { // thios class extends the abastract class , this clas
     System.out.println("driving the car ....");
   }
 
+  @Override
   public int modelNo() {
     return 2;
   }

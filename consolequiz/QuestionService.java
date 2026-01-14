@@ -34,11 +34,13 @@ public class QuestionService {
     // display whatever questions that are there:
 
     Scanner sc = new Scanner(System.in);
-    System.out.println("QUESTIONS PRESENT ARE : ");
 
     System.out.println("welcome to the quiz game");
+
     System.out.println();
+
     System.out.println("what is ur name ??");
+
     String userName = sc.nextLine();
     int currentScore = 0;
     User participant = new User(userName, currentScore);
@@ -52,7 +54,7 @@ public class QuestionService {
       System.out.println("question number : " + q.getId());
       System.out.println(q.getQuestion());
 
-      //print options
+      // print options
       String[] options = q.getOptions();
 
       System.out.println("Options : ");

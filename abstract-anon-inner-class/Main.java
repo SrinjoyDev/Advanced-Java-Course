@@ -18,6 +18,7 @@ abstract class Plane {
 }
 
 class FighterPlane extends Plane { // only use of this class is to define the asbtract method so that is usable
+  @Override
   public void fly() {
     System.out.println("figher plane is flying!!");
   }

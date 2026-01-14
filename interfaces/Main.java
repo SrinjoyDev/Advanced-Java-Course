@@ -15,6 +15,8 @@ interface Student {
 
   // u cant do the above thing u cant just declare vars in an interface coz
   // interface dosent consume memory , it is a definition.
+  // they do consume memory , but not in the heap as objects do . their metadata
+  // and constantss are stored by the JVM.
   // u can decleare a variable.
   // by default vars in interfaces are final and static.
   // if something dosent consume memory in heap ,then how can it be non final and
@@ -29,6 +31,29 @@ interface Student {
 
   public void config();
 }
+
+// so if u want to go deep , if u want to understand where does interfaces store
+// this final data.
+// there are 4 memorys in java.
+// 1. Heap (for objects new)
+// 2. stack (for method calls , local variables)
+// 3. method area / metaspace (class and interface metadata)
+// 4. string constant pool (string literals)
+//
+// interfaces uses 3 and 4.
+
+// for the above interface whtat the compiler silently do is:
+
+/*
+ * interface Student {
+ * public static final int age = 22;
+ * public static final String name = "Kodemaster AI";
+ * 
+ * public abstract void show();
+ * 
+ * public abstract void config();
+ * }
+ */
 
 interface AnotherInterface {
   public void run();
