@@ -22,6 +22,29 @@ class Counter {
 }
 
 
+//some theory for threads states.
+
+//States in Threads.
+
+//new , Runnable , Running . waiting , Dead.
+
+//New -> when a thread is created 
+// Thread t1 = new Thread();
+
+//Runnable . > when we start the thread
+// t1.start();
+
+//Runniung -> when the thread is actuall getting ran and executed in the cpu that is the runnable state.
+//otherwise when the thread is ready to run and waited by the scheduler to run that is the runnable state.
+
+//sleep method -> waiting state for thread (sleep(() , wait()))
+
+//stop method -> thread is dead.
+//NOTE: dont use stop method in threads it createss instabilkity in ur applications.
+
+//from waititig to RUnnabvle , u will have to use a notify method to comeback to the runnable state.
+
+
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         Counter c = new Counter();
