@@ -7,16 +7,13 @@ import java.util.List;
 
 
 class Student implements Comparable<Student> {
-
     int age;
     String name;
-
     
     public Student(int age, String name) {
         this.age = age;
         this.name = name;
     }
-
 
     @Override
     public String toString() {
@@ -29,8 +26,7 @@ class Student implements Comparable<Student> {
             return 1;
         }
         return -1;
-    }
-    
+    }    
 }
 
 public class Main {
@@ -51,16 +47,7 @@ public class Main {
         //there we can use comparators.
         //comparators is an interface.
         //if we see comparator is a functional interface , so we can make an anonymous class out of it , and use it.
-        // Comparator<Integer> com = new Comparator<Integer>() {
-        //     @Override
-        //     public int compare(Integer i  , Integer j) {
-        //         if(i%10 > j %10){ //this is to check the last number of an element
-        //             return 1; //swap for 1
-        //         }
-        //         return -1; //dont swap for -1
-        //     }
-        // };
-
+       
         Comparator<Integer> com = ( i, j) -> {
             return Integer.compare(i%10 , j%10);
         };
@@ -80,16 +67,6 @@ public class Main {
         }
 
         //how do we sort this students based on their age.
-        // Comparator<Student> studentComparator = new Comparator<Student>() {
-        //     @Override
-        //     public int compare(Student s1 , Student s2){
-        //         if(s1.age > s2.age){
-        //             return 1;
-        //         }
-        //         return -1;
-        //     }
-        // };
-
         Comparator<Student> studentComparator = (s1 , s2) -> {
             return s1.age > s2.age ? 1 : -1;
         };
